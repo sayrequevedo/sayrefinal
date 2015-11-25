@@ -8,7 +8,7 @@ function main() {
 
     // instantiate map object from Leaflet
     var mapObj = new L.Map(map, {
-        center: [0, 0], // Null Island
+        center: [40.7127, -74.0059], // new york
         zoom: 3 // zoom projection to adjust starting point zoom
     });
 

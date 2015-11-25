@@ -5,12 +5,16 @@ function main() {
     var vizjson_url = 'https://quevs381.cartodb.com/api/v2/viz/91cab74e-8b2b-11e5-99ea-0e5db1731f59/viz.json';
 
     var sublayers = [];
+    
+    var options ={
+        layer_selector:true
+    }
 
     // instantiate map object from Leaflet
     var mapObj = new L.Map(map, {
         center: [40.7127, -74.0059], // new york
-        zoom: 5, // zoom projection to adjust starting point zoom
-        layer_selector:true
+        zoom: 7, // zoom projection to adjust starting point zoom
+        
     });
 
 

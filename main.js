@@ -24,6 +24,10 @@ function main() {
         .done(function(layer) {
           console.log("Map successfully created.");
             sublayers[0] = layer.getSubLayer(0);
+            sublayers[1] = layer.getSubLayer(1);
+            sublayers[2] = layer.getSubLayer(2);
+            sublayers[3] = layer.getSubLayer(3);
+            sublayers[4] = layer.getSubLayer(4);
             sublayers[0].set(options); // altering the SQL and CartoCSS; see above
         })
         .error(function(err) {
